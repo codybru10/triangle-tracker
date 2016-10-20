@@ -6,7 +6,7 @@ var triangleMath = function() {
 
   if (sideOne === sideTwo && sideTwo === sideThree) {
     $(".output").text("This is an Equilateral Triangle");
-  } else if ((sideOne === sideTwo && sideOne + sideTwo >= sideThree) || (sideTwo === sideThree && sideTwo + sideThree >= sideOne) || (sideOne === sideThree && sideOne + sideThree >= sideTwo) && (sideOne + sideTwo <= sideThree) || (sideOne + sideThree <= sideTwo) || (sideTwo + sideThree <= sideOne)) {
+  } else if ((sideOne === sideTwo && sideOne + sideTwo >= sideThree) || (sideTwo === sideThree && sideTwo + sideThree >= sideOne) || (sideOne === sideThree && sideOne + sideThree >= sideTwo) && !(sideOne + sideTwo <= sideThree) || (sideOne + sideThree <= sideTwo) || (sideTwo + sideThree <= sideOne)) {
     $(".output").text("This is an Isosceles Triangle");
   } else if ((sideOne != sideTwo && sideOne != sideThree && sideTwo != sideThree) && !(sideOne + sideTwo <= sideThree) || (sideOne + sideThree <= sideTwo) || (sideTwo + sideThree <= sideOne)) {
     $(".output").text("This is a Scalene Triangle");
