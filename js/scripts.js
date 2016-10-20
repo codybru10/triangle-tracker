@@ -9,8 +9,6 @@ var triangleMath = function(sideOne, sideTwo, sideThree) {
     return "This is a Scalene Triangle";
   } else if ((sideOne + sideTwo <= sideThree) || (sideOne + sideThree <= sideTwo) || (sideTwo + sideThree <= sideOne)) {
     return "This is not a triangle";
-  } else {
-    alert("Error");
   }
 }
 
